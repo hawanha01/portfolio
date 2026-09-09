@@ -115,18 +115,10 @@ export default function HomePage() {
               data-reveal
               aria-label={`View ${project.name} case study`}
             >
-              <ProjectVisual visual={project.visual} name={project.name} screenshot={project.screenshot} />
-              <div className="project-card-meta">
-                <div>
-                  <span className="project-eyebrow">{project.eyebrow}</span>
-                  <h3>{project.name}</h3>
-                </div>
-                <span className="project-arrow">↗</span>
+              <div className="project-float">
+                <ProjectVisual visual={project.visual} name={project.name} screenshot={project.screenshot} />
               </div>
-              <p>{project.summary}</p>
-              <div className="project-tags">
-                {project.tags.slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}
-              </div>
+              <h3 className="project-card-name">{project.name}</h3>
             </Link>
           ))}
         </div>
