@@ -49,7 +49,6 @@ export default function HomePage() {
       <section className="hero-shell section-pad" id="top">
         <div className="hero-frame" data-hero>
           <div className="hero-topline">
-            <a className="mark" href="#top" aria-label="Muhammad Hamza home">MH</a>
             <span className="hero-status"><span className="green-dot" /> Open to opportunities</span>
           </div>
 

@@ -94,6 +94,7 @@ export function SiteChrome() {
           {navItems.map(([label, hash]) => (
             <a className={activeHash === hash ? "is-active" : ""} href={hash} key={hash}>{label}</a>
           ))}
+          <a className="nav-resume-mobile" href="/Muhammad-Hamza-Resume.pdf" download>Resume ↓</a>
           <a className="nav-cta" href="mailto:dev.hamza.010@gmail.com">Get in touch ↗</a>
         </nav>
       ) : (
