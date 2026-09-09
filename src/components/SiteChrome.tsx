@@ -24,14 +24,23 @@ export function SiteChrome() {
     );
     document.querySelectorAll("[data-reveal]").forEach((el) => revealObserver.observe(el));
 
+    const sectionRatios = new Map<string, number>();
     const sectionObserver = new IntersectionObserver(
       (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible?.target.id) setActiveHash(`#${visible.target.id}`);
+        entries.forEach((entry) => {
+          sectionRatios.set(entry.target.id, entry.isIntersecting ? entry.intersectionRatio : 0);
+        });
+        let bestId = "";
+        let bestRatio = 0;
+        sectionRatios.forEach((ratio, id) => {
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestId = id;
+          }
+        });
+        if (bestId) setActiveHash(`#${bestId}`);
       },
-      { threshold: [0.18, 0.35, 0.55], rootMargin: "-18% 0px -55% 0px" }
+      { threshold: [0, 0.18, 0.35, 0.55, 0.75, 1], rootMargin: "-18% 0px -55% 0px" }
     );
     navItems.forEach(([, hash]) => {
       const section = document.querySelector(hash);

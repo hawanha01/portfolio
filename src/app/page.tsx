@@ -188,7 +188,7 @@ export default function HomePage() {
         <h2 className="contact-title" data-reveal><GlowText text="START A CONVERSATION" /></h2>
         <div className="contact-grid">
           <div className="contact-copy" data-reveal>
-            <p>I&apos;m open to remote opportunities and onsite roles in Pakistan. If you&apos;re hiring for backend, full-stack, Node.js or NestJS work, send me the context and I&apos;ll get back to you.</p>
+            <p>Want to collaborate, discuss a project, or connect about software engineering? Drop me a message and I&apos;ll get back to you.</p>
             <div className="contact-links">
               <a href="mailto:dev.hamza.010@gmail.com"><span>Email</span>dev.hamza.010@gmail.com ↗</a>
               <a href="https://www.linkedin.com/in/hawanha1/" target="_blank" rel="noreferrer"><span>LinkedIn</span>linkedin.com/in/hawanha1 ↗</a>
