@@ -298,8 +298,13 @@ img { max-width: 100%; }
 /* skills */
 .skills-section { padding-bottom: 160px; overflow: hidden; }
 .skill-marquee { width: 100vw; margin-left: calc((100vw - var(--page)) / -2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow: hidden; }
-.skill-track { width: max-content; display: flex; gap: 10px; padding: 18px 10px; animation: marquee 34s linear infinite; }
-.skill-track span { border: 1px solid var(--border); border-radius: 999px; padding: 11px 18px; font-size: 13px; white-space: nowrap; background: var(--panel); }
+.skill-track { width: max-content; display: flex; gap: 14px; padding: 22px 10px; animation: marquee 34s linear infinite; }
+.skill-track span {
+  display: grid; place-items: center; width: 64px; height: 64px; flex: none;
+  border: 1px solid var(--border); border-radius: 18px; background: var(--panel);
+  color: var(--muted); font-size: 28px; transition: color .2s, border-color .2s, transform .2s;
+}
+.skill-track span:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-3px); }
 .skill-marquee:hover .skill-track { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 .skill-groups { margin-top: 56px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }

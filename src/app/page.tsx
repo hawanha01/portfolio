@@ -8,6 +8,7 @@ import { HeroLetters } from "@/components/HeroLetters";
 import { MetricCounter } from "@/components/MetricCounter";
 import { ProjectVisual } from "@/components/ProjectVisual";
 import { ServiceRows } from "@/components/ServiceRows";
+import { SkillIcon } from "@/components/SkillIcon";
 
 const services = [
   {
@@ -153,7 +154,11 @@ export default function HomePage() {
         <h2 className="display-title" data-reveal><GlowText text="TOOLS I USE TO SHIP THE WORK" /></h2>
         <div className="skill-marquee" data-reveal aria-label="Technology stack">
           <div className="skill-track">
-            {[...skills, ...skills].map((skill, index) => <span key={`${skill}-${index}`}>{skill}</span>)}
+            {[...skills, ...skills].map((skill, index) => (
+              <span key={`${skill}-${index}`} title={skill} aria-label={skill}>
+                <SkillIcon skill={skill} />
+              </span>
+            ))}
           </div>
         </div>
         <div className="skill-groups" data-reveal>
