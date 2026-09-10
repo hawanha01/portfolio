@@ -32,13 +32,13 @@ export function ProjectVisual({
         <div className="visual-flow" aria-hidden="true"><i>VIP</i><span /><i>24h</i><span /><i>Recruit</i><span /><i>Partner</i></div>
       )}
       {visual === "justworks" && (
-        <div className="visual-speed" aria-hidden="true"><strong>10m</strong><span>→</span><strong>sec</strong><small>forecasting</small></div>
+        <div className="visual-speed" aria-hidden="true"><strong>10m</strong><span>→&#xFE0E;</span><strong>sec</strong><small>forecasting</small></div>
       )}
       {visual === "dfe" && (
         <div className="visual-dfe" aria-hidden="true"><i>NPQ</i><span>REST</span><i>ECF</i><small>sync + jobs</small></div>
       )}
       {visual === "spsg" && (
-        <div className="visual-migration" aria-hidden="true"><strong>MySQL</strong><span>23K+</span><b>→</b><strong>Postgres</strong></div>
+        <div className="visual-migration" aria-hidden="true"><strong>MySQL</strong><span>23K+</span><b>→&#xFE0E;</b><strong>Postgres</strong></div>
       )}
     </div>
   );

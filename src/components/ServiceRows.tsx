@@ -37,7 +37,7 @@ export function ServiceRows({ services }: { services: Service[] }) {
           <span className="service-number">0{index + 1}</span>
           <h3>{service.title}</h3>
           <p>{service.copy}</p>
-          <span className="service-arrow">↗</span>
+          <span className="service-arrow">↗&#xFE0E;</span>
         </article>
       ))}
     </div>

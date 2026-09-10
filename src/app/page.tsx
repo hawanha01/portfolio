@@ -70,8 +70,8 @@ export default function HomePage() {
           <div className="hero-bottomline">
             <p>Senior Software Engineer · Lahore, Pakistan</p>
             <div className="hero-actions">
-              <a className="text-link" href="#work">Selected work ↘</a>
-              <a className="text-link" href="/Muhammad-Hamza-Resume.pdf" download>Resume ↓</a>
+              <a className="text-link" href="#work">Selected work ↘&#xFE0E;</a>
+              <a className="text-link" href="/Muhammad-Hamza-Resume.pdf" download>Resume ↓&#xFE0E;</a>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function HomePage() {
           <MetricCounter value="4+" label="Years in software engineering" />
           <MetricCounter value="26K+" label="Real fighter profiles imported" />
           <MetricCounter value="23K+" label="Legacy users migrated" />
-          <MetricCounter value="5-10+ min → seconds" label="Payroll forecasting operation" compact />
+          <MetricCounter value="5-10+ min →&#xFE0E; seconds" label="Payroll forecasting operation" compact />
           <MetricCounter value="~120 GB" label="Production database scale observed" />
         </div>
       </section>
@@ -195,8 +195,8 @@ export default function HomePage() {
           <div className="contact-copy" data-reveal>
             <p>Want to collaborate, discuss a project, or connect about software engineering? Drop me a message and I&apos;ll get back to you.</p>
             <div className="contact-links">
-              <a href="mailto:dev.hamza.010@gmail.com"><span>Email</span>dev.hamza.010@gmail.com ↗</a>
-              <a href="https://www.linkedin.com/in/hawanha1/" target="_blank" rel="noreferrer"><span>LinkedIn</span>linkedin.com/in/hawanha1 ↗</a>
+              <a href="mailto:dev.hamza.010@gmail.com"><span>Email</span>dev.hamza.010@gmail.com ↗&#xFE0E;</a>
+              <a href="https://www.linkedin.com/in/hawanha1/" target="_blank" rel="noreferrer"><span>LinkedIn</span>linkedin.com/in/hawanha1 ↗&#xFE0E;</a>
               <span className="contact-location"><span>Location</span>Lahore, Pakistan</span>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function HomePage() {
       <footer className="site-footer section-pad">
         <div><strong>Muhammad Hamza</strong><span>Senior Software Engineer</span></div>
         <p>Backend-heavy systems, built to make it to production.</p>
-        <a href="#top">Back to top ↑</a>
+        <a href="#top">Back to top ↑&#xFE0E;</a>
       </footer>
     </main>
   );

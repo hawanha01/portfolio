@@ -103,15 +103,15 @@ export function SiteChrome() {
           {navItems.map(([label, hash]) => (
             <a className={activeHash === hash ? "is-active" : ""} href={hash} key={hash}>{label}</a>
           ))}
-          <a className="nav-resume-mobile" href="/Muhammad-Hamza-Resume.pdf" download>Resume ↓</a>
-          <a className="nav-cta" href="mailto:dev.hamza.010@gmail.com">Get in touch ↗</a>
+          <a className="nav-resume-mobile" href="/Muhammad-Hamza-Resume.pdf" download>Resume ↓&#xFE0E;</a>
+          <a className="nav-cta" href="mailto:dev.hamza.010@gmail.com">Get in touch ↗&#xFE0E;</a>
         </nav>
       ) : (
         <nav className="floating-nav floating-nav-case" aria-label="Project navigation">
           <a href="/#work">Work</a>
           <a href="/#experience">Experience</a>
           <a href="/#contact">Contact</a>
-          <a className="nav-cta" href="/Muhammad-Hamza-Resume.pdf" download>Resume ↓</a>
+          <a className="nav-cta" href="/Muhammad-Hamza-Resume.pdf" download>Resume ↓&#xFE0E;</a>
         </nav>
       )}
 

@@ -40,7 +40,7 @@ export default async function ProjectCaseStudy({ params }: PageProps) {
   return (
     <main className="case-page" id="main-content">
       <section className="section-pad case-hero">
-        <Link className="case-back" href="/#work">← Back to selected work</Link>
+        <Link className="case-back" href="/#work">←&#xFE0E; Back to selected work</Link>
         <div className="case-hero-grid">
           <div>
             <div className="section-label"><span className="green-dot" /> {project.eyebrow}</div>
@@ -56,7 +56,7 @@ export default async function ProjectCaseStudy({ params }: PageProps) {
             <div><span>Period</span><strong>{project.period}</strong></div>
             <div className="case-links">
               {(project.links ?? [{ label: "Visit public website", url: project.liveUrl }]).map((link) => (
-                <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>
+                <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗&#xFE0E;</a>
               ))}
             </div>
           </aside>
@@ -135,7 +135,7 @@ export default async function ProjectCaseStudy({ params }: PageProps) {
         <span>Next case study</span>
         <Link href={`/work/${nextProject.slug}`}>
           <strong>{nextProject.name}</strong>
-          <span>↗</span>
+          <span>↗&#xFE0E;</span>
         </Link>
       </section>
     </main>

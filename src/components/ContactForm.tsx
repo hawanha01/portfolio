@@ -26,7 +26,7 @@ export function ContactForm() {
       <label><span>Full name</span><input name="name" autoComplete="name" placeholder="Your name" /></label>
       <label><span>Email address</span><input name="email" type="email" autoComplete="email" placeholder="you@company.com" /></label>
       <label><span>Message</span><textarea name="message" rows={5} placeholder="Role, project, or what you want to discuss" /></label>
-      <div className="form-footer"><button type="submit">Send via email ↗</button><span aria-live="polite">{status}</span></div>
+      <div className="form-footer"><button type="submit">Send via email ↗&#xFE0E;</button><span aria-live="polite">{status}</span></div>
     </form>
   );
 }

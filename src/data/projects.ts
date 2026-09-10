@@ -135,7 +135,7 @@ export const projects: Project[] = [
     metrics: [
       { value: "5-10+ min", label: "before optimization" },
       { value: "seconds", label: "after optimization" },
-      { value: "~60→120 GB", label: "database growth during engagement" }
+      { value: "~60→︎120 GB", label: "database growth during engagement" }
     ],
     tags: ["Performance", "PostgreSQL", "Rails", "Data cleanup"],
     overview:
@@ -170,7 +170,7 @@ export const projects: Project[] = [
     metrics: [
       { value: "2", label: "connected Rails applications" },
       { value: "REST", label: "cross-system synchronization" },
-      { value: "Rails 5→7", label: "upgrade preparation path" }
+      { value: "Rails 5→\u{FE0E}7", label: "upgrade preparation path" }
     ],
     tags: ["Government", "Rails", "REST", "Background jobs", "Maintenance"],
     overview:
@@ -204,7 +204,7 @@ export const projects: Project[] = [
     screenshot: "/projects/spsg.jpg",
     metrics: [
       { value: "23K+", label: "users in the legacy dataset" },
-      { value: "MySQL→Postgres", label: "database transition" },
+      { value: "MySQL→\u{FE0E}Postgres", label: "database transition" },
       { value: "table-by-table", label: "controlled migration" }
     ],
     tags: ["Migration", "Data", "NestJS", "PostgreSQL", "Legacy"],
