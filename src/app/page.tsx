@@ -14,27 +14,27 @@ const services = [
   {
     title: "Backend Engineering",
     copy: "NestJS and Node.js services, data models, authentication, background work and APIs built for production.",
-    image: "/services/backend.jpg"
+    image: "/services/backend.webp"
   },
   {
     title: "Full-Stack Development",
     copy: "Features carried from database and API contracts through React, Next.js or Vue integration when the product needs end-to-end ownership.",
-    image: "/services/fullstack.jpg"
+    image: "/services/fullstack.webp"
   },
   {
     title: "System Architecture",
     copy: "Schemas, module boundaries, queues and workflows shaped around the actual product instead of abstract patterns.",
-    image: "/services/architecture.jpg"
+    image: "/services/architecture.webp"
   },
   {
     title: "API & Integration Engineering",
     copy: "REST APIs and third-party integrations including Veriff, Pusher, Knock, Firebase, Microsoft Teams and Azure Service Bus.",
-    image: "/services/integration.jpg"
+    image: "/services/integration.webp"
   },
   {
     title: "Performance & Data Engineering",
     copy: "Query work, search, pagination, background processing and high-volume migrations when response time and data volume matter.",
-    image: "/services/performance.jpg"
+    image: "/services/performance.webp"
   }
 ];
 
