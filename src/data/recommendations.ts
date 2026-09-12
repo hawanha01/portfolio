@@ -13,7 +13,7 @@ export const recommendations: Recommendation[] = [
     name: "Salman Nasir",
     title: "Chief Executive Officer · Ilsa Interactive",
     initials: "SN",
-    photo: "/recommendations/salman-nasir-avatar.jpg"
+    photo: "/recommendations/salman-nasir-avatar.webp"
   },
   {
     quote:
@@ -21,7 +21,7 @@ export const recommendations: Recommendation[] = [
     name: "Mr. Asim Rasul",
     title: "Assistant Professor, Computer Science · University of the Punjab",
     initials: "AR",
-    photo: "/recommendations/asimrasul-avatar.jpg"
+    photo: "/recommendations/asimrasul-avatar.webp"
   },
   {
     quote:
@@ -29,6 +29,6 @@ export const recommendations: Recommendation[] = [
     name: "Dr. Saadia Shahzad",
     title: "Assistant Professor, Computer Science · University of the Punjab",
     initials: "SS",
-    photo: "/recommendations/sadia-avatar.jpg"
+    photo: "/recommendations/sadia-avatar.webp"
   }
 ];

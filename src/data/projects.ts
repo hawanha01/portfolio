@@ -38,7 +38,7 @@ export const projects: Project[] = [
       { label: "Application", url: "https://app.fightbook.com/" }
     ],
     visual: "fightbook",
-    screenshot: "/projects/fightbook.jpg",
+    screenshot: "/projects/fightbook.webp",
     metrics: [
       { value: "26K+", label: "real fighter profiles imported" },
       { value: "6-7 mo", label: "from first commit to launch" },
@@ -94,7 +94,7 @@ export const projects: Project[] = [
       { label: "Partner portal", url: "https://mic-partner.takafo.ai/" }
     ],
     visual: "takafo",
-    screenshot: "/projects/takafo.jpg",
+    screenshot: "/projects/takafo.webp",
     metrics: [
       { value: "~10", label: "new models/tables in the module" },
       { value: "2", label: "delivery phases" },
@@ -122,7 +122,7 @@ export const projects: Project[] = [
   {
     slug: "justworks",
     name: "Justworks",
-    screenshot: "/projects/justworks.jpg",
+    screenshot: "/projects/justworks.webp",
     eyebrow: "Payroll forecasting optimization",
     summary:
       "Worked inside an established Rails/PostgreSQL payroll product to bring expensive forecasting operations down from minutes to seconds.",
@@ -166,7 +166,7 @@ export const projects: Project[] = [
     liveUrl: "https://register-national-professional-qualifications.education.gov.uk/",
     liveLabel: "register-national-professional-qualifications.education.gov.uk",
     visual: "dfe",
-    screenshot: "/projects/dfe.jpg",
+    screenshot: "/projects/dfe.webp",
     metrics: [
       { value: "2", label: "connected Rails applications" },
       { value: "REST", label: "cross-system synchronization" },
@@ -201,7 +201,7 @@ export const projects: Project[] = [
     liveUrl: "https://spsgonline.org/",
     liveLabel: "spsgonline.org",
     visual: "spsg",
-    screenshot: "/projects/spsg.jpg",
+    screenshot: "/projects/spsg.webp",
     metrics: [
       { value: "23K+", label: "users in the legacy dataset" },
       { value: "MySQL→\u{FE0E}Postgres", label: "database transition" },

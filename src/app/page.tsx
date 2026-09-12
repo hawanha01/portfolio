@@ -55,7 +55,7 @@ export default function HomePage() {
 
           <div className="hero-portrait-wrap" aria-hidden="true">
             <div className="portrait-halo" />
-            <img className="hero-portrait" src="/hero-portrait.jpg" alt="" />
+            <img className="hero-portrait" src="/hero-portrait.webp" alt="" />
           </div>
 
           <p className="hero-kicker">Building Production Systems From Architecture to Launch</p>
