@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { PointerEvent, useRef, useState } from "react";
 
 type Service = { title: string; copy: string; image?: string };
@@ -21,7 +22,14 @@ export function ServiceRows({ services }: { services: Service[] }) {
     <div className="service-wrap" ref={wrapRef} onPointerMove={move}>
       <div className={`service-preview service-preview-${active + 1}`} aria-hidden="true">
         {services[active].image && (
-          <img className="service-preview-img" src={services[active].image} alt="" loading="lazy" />
+          <Image
+            className="service-preview-img"
+            src={services[active].image}
+            alt=""
+            fill
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, 300px"
+          />
         )}
         <div className="service-preview-scrim" />
         <span>0{active + 1}</span>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function ProjectVisual({
   visual,
   name,
@@ -12,7 +14,14 @@ export function ProjectVisual({
   if (screenshot) {
     return (
       <div className={`project-visual project-visual-${visual} project-visual-shot ${hero ? "project-visual-hero" : ""}`}>
-        <img className="project-visual-shot-img" src={screenshot} alt={`${name} product screenshot`} loading="lazy" />
+        <Image
+          className="project-visual-shot-img"
+          src={screenshot}
+          alt={`${name} product screenshot`}
+          fill
+          loading="lazy"
+          sizes="(max-width: 900px) 100vw, (max-width: 1400px) 50vw, 640px"
+        />
         <div className="project-visual-shot-scrim" />
         <div className="project-visual-glow" />
         <div className="project-visual-word">{name}</div>

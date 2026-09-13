@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { experience } from "@/data/experience";
 import { projects } from "@/data/projects";
@@ -55,7 +56,14 @@ export default function HomePage() {
 
           <div className="hero-portrait-wrap" aria-hidden="true">
             <div className="portrait-halo" />
-            <img className="hero-portrait" src="/hero-portrait.webp" alt="" />
+            <Image
+              className="hero-portrait"
+              src="/hero-portrait.webp"
+              alt=""
+              priority
+              fill
+              sizes="(max-width: 1200px) 80vw, 780px"
+            />
           </div>
 
           <p className="hero-kicker">Building Production Systems From Architecture to Launch</p>
@@ -180,7 +188,15 @@ export default function HomePage() {
                 <GlowText text={rec.quote} />
               </blockquote>
               <div className="testimonial-author">
-                <img className="author-avatar" src={rec.photo} alt={rec.name} loading="lazy" />
+                <Image
+                  className="author-avatar"
+                  src={rec.photo}
+                  alt={rec.name}
+                  width={48}
+                  height={48}
+                  loading="lazy"
+                  sizes="48px"
+                />
                 <div><strong>{rec.name}</strong><span>{rec.title}</span></div>
               </div>
             </div>
