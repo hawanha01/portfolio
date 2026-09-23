@@ -5,8 +5,14 @@ import { siteUrl } from "@/data/site";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
   return [
-    { url: siteUrl, changeFrequency: "monthly", priority: 1 },
-    ...projects.map((project) => ({ url: `${siteUrl}/work/${project.slug}`, changeFrequency: "monthly" as const, priority: 0.8 }))
+    { url: siteUrl, lastModified, changeFrequency: "monthly", priority: 1 },
+    ...projects.map((project) => ({
+      url: `${siteUrl}/work/${project.slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.8
+    }))
   ];
 }

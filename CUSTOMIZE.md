@@ -4,9 +4,9 @@
 
 Replace:
 
-`public/avatar-placeholder.svg`
+`public/muhammad-hamza-senior-software-engineer.webp`
 
-Keep the same filename, or update the `src` in `src/app/page.tsx`. A transparent PNG/WebP works best because the hero layers the portrait behind the oversized name.
+Keep the same filename (it's also referenced in the Person structured data in `src/app/layout.tsx`), or update both references if you rename it. A transparent PNG/WebP works best because the hero layers the portrait behind the oversized name.
 
 ## Replace the resume
 
@@ -18,13 +18,13 @@ Keep the same filename so the existing download links continue to work.
 
 ## Set the real domain
 
-Set:
+The production domain is `https://muhammad-hamza.me` and is already the default in `src/data/site.ts`. Copy `.env.template` to `.env.local` (or set the same variables in your hosting provider's dashboard) to make it explicit and to add search engine verification codes:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://your-domain.com
+cp .env.template .env.local
 ```
 
-This updates canonical metadata, Open Graph URLs, sitemap and robots output.
+`NEXT_PUBLIC_SITE_URL` drives canonical metadata, Open Graph URLs, sitemap and robots output. `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` and `NEXT_PUBLIC_BING_SITE_VERIFICATION` are needed to verify site ownership in Google Search Console and Bing Webmaster Tools — see `.env.template` for how to get each one.
 
 ## Update contact details
 

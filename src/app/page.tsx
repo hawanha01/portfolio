@@ -54,12 +54,12 @@ export default function HomePage() {
             <span className="hero-status"><span className="green-dot" /> Open to opportunities</span>
           </div>
 
-          <div className="hero-portrait-wrap" aria-hidden="true">
-            <div className="portrait-halo" />
+          <div className="hero-portrait-wrap">
+            <div className="portrait-halo" aria-hidden="true" />
             <Image
               className="hero-portrait"
-              src="/hero-portrait.webp"
-              alt=""
+              src="/muhammad-hamza-senior-software-engineer.webp"
+              alt="Muhammad Hamza, Senior Software Engineer"
               priority
               fill
               sizes="(max-width: 1200px) 80vw, 780px"
