@@ -25,7 +25,7 @@ export function ServiceRows({ services }: { services: Service[] }) {
           <Image
             className="service-preview-img"
             src={services[active].image}
-            alt=""
+            alt={`${services[active].title} — Muhammad Hamza service preview`}
             fill
             loading="lazy"
             sizes="(max-width: 768px) 100vw, 300px"

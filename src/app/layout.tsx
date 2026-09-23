@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s — Muhammad Hamza"
   },
   description:
-    "Muhammad Hamza is a Senior Software Engineer in Lahore, Pakistan — a backend-heavy full-stack engineer with 4+ years building production systems in Node.js, NestJS, TypeScript and PostgreSQL.",
+    "Muhammad Hamza — Senior Software Engineer in Lahore, Pakistan. Backend-heavy engineer building production systems with Node.js, NestJS and TypeScript.",
   keywords: [
     "Muhammad Hamza",
     "Hamza",
