@@ -21,10 +21,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: project.name,
     description: project.summary,
+    alternates: { canonical: `/work/${project.slug}` },
     openGraph: {
+      type: "article",
+      url: `/work/${project.slug}`,
+      siteName: "Muhammad Hamza",
+      locale: "en_US",
       title: `${project.name} — Muhammad Hamza`,
       description: project.summary,
-      type: "article"
+      images: project.screenshot
+        ? [{ url: project.screenshot, alt: `${project.name} — Muhammad Hamza case study` }]
+        : [{ url: "/og-card.svg", width: 1200, height: 630, alt: "Muhammad Hamza — Senior Software Engineer" }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.name} — Muhammad Hamza`,
+      description: project.summary,
+      images: [project.screenshot ?? "/og-card.svg"]
     }
   };
 }
